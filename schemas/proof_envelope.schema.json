@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Proof-Carrying Action Envelope",
+  "type": "object",
+  "required": [
+    "action_id",
+    "domain",
+    "recommendation",
+    "warrant",
+    "receipts",
+    "null_arms",
+    "credit_policy"
+  ],
+  "properties": {
+    "action_id": {"type": "string"},
+    "domain": {"type": "string"},
+    "recommendation": {"type": "string"},
+    "warrant": {
+      "type": "object",
+      "required": ["thesis", "falsifier", "risk_gate"],
+      "properties": {
+        "thesis": {"type": "string"},
+        "falsifier": {"type": "string"},
+        "risk_gate": {"type": "string"}
+      }
+    },
+    "receipts": {
+      "type": "object",
+      "properties": {
+        "entry": {"type": ["object", "null"]},
+        "exit": {"type": ["object", "null"]},
+        "terminal_join": {"type": ["object", "null"]},
+        "wait_policy": {"type": ["object", "null"]},
+        "counterfactual": {"type": ["object", "null"]}
+      }
+    },
+    "null_arms": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "credit_policy": {
+      "type": "string",
+      "enum": ["NO_CREDIT_REPAIR_INTENT_ONLY", "METRIC_CREDIT_ALLOWED"]
+    }
+  }
+}
+

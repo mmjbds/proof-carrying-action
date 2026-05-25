@@ -1,0 +1,9 @@
+{
+  "action_id": "toy-action-001",
+  "allow_action": false,
+  "closed_receipts": ["entry", "counterfactual"],
+  "missing_receipts": ["exit", "terminal_join", "wait_policy"],
+  "credit_granted": false,
+  "status": "NO_GO_REPAIR_REQUIRED"
+}
+

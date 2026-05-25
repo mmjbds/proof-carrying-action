@@ -1,0 +1,20 @@
+{
+  "action_id": "toy-action-001",
+  "domain": "synthetic_high_risk_decision",
+  "recommendation": "prepare_repair_work_order",
+  "warrant": {
+    "thesis": "Evidence is incomplete, so action authority must remain closed.",
+    "falsifier": "If required receipts are closed and null arms are beaten, the packet may be re-evaluated.",
+    "risk_gate": "closed"
+  },
+  "receipts": {
+    "entry": {"status": "present", "id": "entry-toy-001"},
+    "exit": null,
+    "terminal_join": null,
+    "wait_policy": null,
+    "counterfactual": {"status": "present", "id": "cf-toy-001"}
+  },
+  "null_arms": ["do_nothing", "random_policy", "human_review"],
+  "credit_policy": "NO_CREDIT_REPAIR_INTENT_ONLY"
+}
+

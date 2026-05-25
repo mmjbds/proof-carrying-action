@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated Zenodo record or paper."
+title: "SOVEREIGN / Wisdom Science Public Artifacts"
+authors:
+  - family-names: Zhang
+    given-names: Mian
+license: "Apache-2.0"
+version: "0.1.0"
+date-released: "2026-05-24"
