@@ -1,0 +1,18 @@
+{
+  "schema": "public_release_manifest_v1",
+  "version": "0.1.0",
+  "tag": "v0.1.0",
+  "release_date": "2026-08-17",
+  "artifacts": {
+    "schemas/proof_envelope.schema.json": "a0fcc76b822e7289845439bdd39b4ba2dd4021df6deb739140148cae714b0d7b",
+    "examples/run_no_credit_repair_demo.py": "8b46ac59f53e54c6a3fd935130e4f30501531287b0dc827e4404aa6891d8384a",
+    "examples/input.json": "c8c54b09ec8ee960c7c94abc58d2b034369a2c829a7ebd4e229c783ba4a811d5",
+    "examples/expected_output.json": "14d9b112a499a7fec58a504fae37da26d7ce37cd1b596281077962e898f50b64",
+    "CLAIM_BOUNDARY.md": "09ed72c1a47c7cf8366036224af34bc58500af3dc34d9997ff0b5fe2fc524177"
+  },
+  "verification": [
+    "python examples/run_no_credit_repair_demo.py --check",
+    "python -m pytest"
+  ],
+  "boundary": "Toy public protocol only; not production authorization or safety certification."
+}

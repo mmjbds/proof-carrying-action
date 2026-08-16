@@ -1,9 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite the associated Zenodo record or paper."
-title: "SOVEREIGN / Wisdom Science Public Artifacts"
+title: "Proof-Carrying Action"
 authors:
   - family-names: Zhang
     given-names: Mian
 license: "Apache-2.0"
 version: "0.1.0"
-date-released: "2026-05-24"
+date-released: "2026-08-17"
+repository-code: "https://github.com/mmjbds/proof-carrying-action"
+url: "https://mianzhang.org/demos/proof-action-mini/"

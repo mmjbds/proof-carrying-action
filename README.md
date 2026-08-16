@@ -8,11 +8,14 @@ Proof-Carrying Action is a minimal public protocol for consequential AI actions 
 ## Quick Start
 
 ```bash
+python -m pip install --requirement requirements-dev.txt
 python examples/run_no_credit_repair_demo.py --check
 python -m pytest
 ```
 
 Browser route: https://mianzhang.org/demos/proof-action-mini/
+
+Frozen public version: [`v0.1.0`](https://github.com/mmjbds/proof-carrying-action/releases/tag/v0.1.0). Verify selected files against [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json); changes are recorded in [CHANGELOG.md](CHANGELOG.md).
 
 ## Core Idea
 
