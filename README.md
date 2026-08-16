@@ -1,5 +1,6 @@
 # Proof-Carrying Action
 
+[![public-ci](https://github.com/mmjbds/proof-carrying-action/actions/workflows/public-ci.yml/badge.svg)](https://github.com/mmjbds/proof-carrying-action/actions/workflows/public-ci.yml)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 Proof-Carrying Action is a minimal public protocol for consequential AI actions that must carry inspectable evidence before execution.
