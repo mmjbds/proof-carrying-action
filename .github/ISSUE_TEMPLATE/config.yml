@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public action-authority gate
+    url: https://mianzhang.org/demos/proof-action-mini/
+    about: Run the browser gate before proposing a protocol case.
+  - name: AI Agent Reliability Lab
+    url: https://mianzhang.org/ai-agent-reliability/
+    about: Compare action authority with observer effects and repeated failure.

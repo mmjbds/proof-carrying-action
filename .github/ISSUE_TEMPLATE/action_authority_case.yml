@@ -1,0 +1,52 @@
+name: Action authority case
+description: Propose a synthetic or public-safe action case that should allow, repair or stop.
+title: "[Authority case] "
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic or fully public-safe inputs. Do not post credentials, private logs, customer data, account records or real execution secrets.
+  - type: textarea
+    id: action
+    attributes:
+      label: Proposed action
+      description: State the action, affected system and consequence if it is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Carried evidence
+      description: List the thesis, falsifier, null arms, entry receipt, terminal receipt and counterfactual receipt that exist.
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: Missing or contested proof
+      description: Identify every field that is absent, stale, ambiguous or not attributable.
+    validations:
+      required: true
+  - type: dropdown
+    id: expected
+    attributes:
+      label: Expected protocol decision
+      options:
+        - STOP
+        - REPAIR_ONLY_NO_CREDIT
+        - ALLOW_PUBLIC_NON_DEPLOYMENT_ACTION
+    validations:
+      required: true
+  - type: textarea
+    id: falsifier
+    attributes:
+      label: Falsifier
+      description: What public result would show the expected decision is wrong?
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Public-safety confirmation
+      options:
+        - label: This case is synthetic or public-safe and contains no private execution material.
+          required: true
