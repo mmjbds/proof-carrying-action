@@ -22,6 +22,22 @@ python gate.py --json '{"decision":"QUERY","claim":"Missing source","evidence":[
 python -m unittest discover -s tests -v
 ```
 
+## Optional local-model evidence candidate
+
+`local_evidence_packet_builder.py` can call an Ollama model bound to
+`127.0.0.1` and produce a conservative candidate containing a claim, evidence
+list, boundary, and uncertainties. The default output is a human-reviewable
+`QUERY` case. The model is never treated as a source of truth, and the adapter
+rejects non-local endpoints. This optional adapter is not a production
+authorization layer and does not remove human review.
+
+```text
+python local_evidence_packet_builder.py examples/source.txt --model gemma3:4b
+```
+
+The adapter is deliberately separate from `gate.py`: only an explicit,
+reviewed decision may be passed to the gate, and `ACT` still requires evidence.
+
 ## Release boundary
 
 This repository contains only the public validator, schema-shaped fixtures,

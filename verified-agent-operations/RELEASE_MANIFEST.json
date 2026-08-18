@@ -5,6 +5,7 @@
   "license": "MIT",
   "runtime": "Python 3.10+",
   "network_required": false,
+  "local_model_adapter": "optional Ollama localhost adapter; no remote endpoint accepted",
   "external_side_effects": false,
   "public_files": [
     "README.md",
@@ -12,11 +13,13 @@
     "RELEASE_MANIFEST.json",
     "schema.json",
     "gate.py",
+    "local_evidence_packet_builder.py",
     "examples/allow.json",
     "examples/query.json",
     "examples/refuse.json",
     "examples/wait.json",
     "tests/test_gate.py",
+    "tests/test_local_evidence_packet_builder.py",
     "docs/RELEASE_BOUNDARY_CN.md",
     "docs/MODELSCOPE_SKILL_CARD_CN.md"
   ],
