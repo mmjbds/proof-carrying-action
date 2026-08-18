@@ -1,0 +1,6 @@
+{
+  "decision": "WAIT",
+  "claim": "The required condition has not resolved.",
+  "evidence": ["fixture:pending-001"],
+  "boundary": "Do not continue until the condition is resolved."
+}

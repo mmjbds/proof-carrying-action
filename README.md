@@ -27,6 +27,7 @@ An AI recommendation is not yet an authorized action. A closed proof packet iden
 - A no-credit repair demonstration.
 - A toy closure-gap board.
 - Claim-boundary and no-go checks.
+- Evidence-to-Action Permission Gate: [isolated public prototype](verified-agent-operations/) (MIT-licensed).
 
 ## Boundary
 

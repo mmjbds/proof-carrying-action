@@ -1,0 +1,6 @@
+{
+  "decision": "ACT",
+  "claim": "A synthetic fixture contains the required fields.",
+  "evidence": ["fixture:allow-001", "validator:required-fields"],
+  "boundary": "Synthetic example only; no external side effect."
+}

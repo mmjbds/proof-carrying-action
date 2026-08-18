@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mianzhang:evidence-to-action-permission-gate:v1",
+  "title": "Evidence-to-Action Permission Gate case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision", "claim", "evidence", "boundary"],
+  "properties": {
+    "decision": {"enum": ["ACT", "WAIT", "QUERY", "REFUSE"]},
+    "claim": {"type": "string", "minLength": 1},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "boundary": {"type": "string", "minLength": 1}
+  }
+}

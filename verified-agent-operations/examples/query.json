@@ -1,0 +1,6 @@
+{
+  "decision": "QUERY",
+  "claim": "The requested action lacks a named evidence source.",
+  "evidence": [],
+  "boundary": "Ask for a source before any action is considered."
+}

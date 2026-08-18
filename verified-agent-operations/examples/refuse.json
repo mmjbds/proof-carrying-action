@@ -1,0 +1,6 @@
+{
+  "decision": "REFUSE",
+  "claim": "The request would disclose private material.",
+  "evidence": [],
+  "boundary": "Private prompts, credentials, and customer data stay private."
+}
