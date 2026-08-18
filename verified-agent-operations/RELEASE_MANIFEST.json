@@ -9,6 +9,7 @@
   "external_side_effects": false,
   "public_files": [
     "README.md",
+    "SKILL.md",
     "LICENSE",
     "RELEASE_MANIFEST.json",
     "schema.json",
